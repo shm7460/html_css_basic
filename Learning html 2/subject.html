@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Create An Account</h1>
+    <form>
+      <div>
+        <b><label>First name</label></b>
+        <input required placeholder="길동" type="text" />
+      </div>
+      <div>
+        <b><label>Last name</label></b>
+        <input required placeholder="홍" type="text" />
+      </div>
+      <div>
+        <b><label>Email</label></b>
+        <input required placeholder="example@google.com" type="email" />
+      </div>
+      <div>
+        <b><label>password</label></b>
+        <input required type="password" minlength="12" />
+      </div>
+      <div>
+        <b><label>Birth date</label></b>
+        <input required type="date" name="Birth date" />
+      </div>
+      <div>
+        <b><label>How happy are you</label></b>
+        <input type="range" list="tickmarks" />
+        <datalist id="tickmarks">
+          <option value="0"></option>
+          <option value="10"></option>
+          <option value="20"></option>
+          <option value="30"></option>
+          <option value="40"></option>
+          <option value="50"></option>
+          <option value="60"></option>
+          <option value="70"></option>
+          <option value="80"></option>
+          <option value="90"></option>
+          <option value="100"></option>
+        </datalist>
+      </div>
+      <div>
+        <b><label>What is your fav. color?</label></b>
+        <input type="color" id="head" name="head" value="#fffff" />
+      </div>
+      <input required type="submit" value="Create" />
+    </form>
+  </body>
+</html>
